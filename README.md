@@ -28,21 +28,21 @@ The results are saved in both **CSV** and **JSON** formats.
 git clone https://github.com/yourusername/yourrepo.git
 cd yourrepo
 ```
-###2. Install dependencies
+### 2. Install dependencies
 The script requires Python 3.8+ and the following packages:
 
 ```bash
 pip install requests
 ```
 
-###3. Create the output folder
+### 3. Create the output folder
 Before running the script, create a folder for storing results:
 
 ```bash
 mkdir subdomains
 ```
 
-###🚀 Usage
+### 🚀 Usage
 Run the script:
 
 ```bash
@@ -67,7 +67,7 @@ Enter the domain (e.g. example.com): testphp.vulnweb.com
 [✓] Results saved to: subdomains/testphp.vulnweb.com_subdomains.csv and subdomains/testphp.vulnweb.com_subdomains.json
 ```
 
-###⚙️ How It Works (Step-by-Step)
+### ⚙️ How It Works (Step-by-Step)
 User Input
 The script prompts for a domain name (e.g. example.com).
 
@@ -101,7 +101,7 @@ example.com_subdomains.csv
 
 example.com_subdomains.json
 
-###📂 Example Output
+### 📂 Example Output
 CSV:
 
 ```csv
@@ -125,7 +125,7 @@ JSON:
 ]
 ```
 
-###⚠️ Notes
+### ⚠️ Notes
 API endpoints used in this script are public but may have rate limits.
 
 If some APIs are unreachable, the script will continue using available sources.
