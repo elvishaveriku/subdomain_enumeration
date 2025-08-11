@@ -69,6 +69,7 @@ Enter the domain (e.g. example.com): testphp.vulnweb.com
 
 ### ⚙️ How It Works (Step-by-Step)
 1. User Input
+
 The script prompts for a domain name (e.g. example.com).
 
 2. Fetch Subdomains from APIs
@@ -80,6 +81,7 @@ The script prompts for a domain name (e.g. example.com).
 - get_hackertarget_subdomains() → Uses HackerTarget hostsearch API.
 
 3. Merge & Deduplicate
+
 All subdomains from the 3 sources are combined and duplicates are removed.
 
 4. Resolve to IPs
@@ -95,6 +97,7 @@ All subdomains from the 3 sources are combined and duplicates are removed.
 - save_to_json() → Saves the same data in JSON format.
 
 6. Output Files
+
 Files are saved in the subdomains/ folder:
 
 - example.com_subdomains.csv
