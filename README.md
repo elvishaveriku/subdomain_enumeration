@@ -68,38 +68,38 @@ Enter the domain (e.g. example.com): testphp.vulnweb.com
 ```
 
 ### ⚙️ How It Works (Step-by-Step)
-User Input
+1. User Input
 The script prompts for a domain name (e.g. example.com).
 
-Fetch Subdomains from APIs
+2. Fetch Subdomains from APIs
 
-get_crtsh_subdomains() → Queries crt.sh JSON endpoint.
+- get_crtsh_subdomains() → Queries crt.sh JSON endpoint.
 
-get_finder_subdomains() → Uses finder.tools API.
+- get_finder_subdomains() → Uses finder.tools API.
 
-get_hackertarget_subdomains() → Uses HackerTarget hostsearch API.
+- get_hackertarget_subdomains() → Uses HackerTarget hostsearch API.
 
-Merge & Deduplicate
+3. Merge & Deduplicate
 All subdomains from the 3 sources are combined and duplicates are removed.
 
-Resolve to IPs
+4. Resolve to IPs
 
-Uses socket.gethostbyname() to resolve each subdomain.
+- Uses socket.gethostbyname() to resolve each subdomain.
 
-Threading with ThreadPoolExecutor speeds up the process.
+- Threading with ThreadPoolExecutor speeds up the process.
 
-Save Results
+5. Save Results
 
-save_to_csv() → Saves subdomain & IP pairs in CSV format.
+- save_to_csv() → Saves subdomain & IP pairs in CSV format.
 
-save_to_json() → Saves the same data in JSON format.
+- save_to_json() → Saves the same data in JSON format.
 
-Output Files
+6. Output Files
 Files are saved in the subdomains/ folder:
 
-example.com_subdomains.csv
+- example.com_subdomains.csv
 
-example.com_subdomains.json
+- example.com_subdomains.json
 
 ### 📂 Example Output
 CSV:
