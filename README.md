@@ -27,13 +27,14 @@ The results are saved in both **CSV** and **JSON** formats.
 ```bash
 git clone https://github.com/yourusername/yourrepo.git
 cd yourrepo
+```
 2. Install dependencies
 The script requires Python 3.8+ and the following packages:
 
-bash
-Copy
-Edit
+```bash
 pip install requests
+```
+
 3. Create the output folder
 Before running the script, create a folder for storing results:
 
